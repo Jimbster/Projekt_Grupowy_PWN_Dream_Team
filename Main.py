@@ -1,0 +1,3 @@
+"""""
+Poczatek projektu
+"""""
