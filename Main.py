@@ -41,7 +41,11 @@ def DatasetPreprocessing(data, columns_to_map):
 
     return data_clean
 
-print(DatasetPreprocessing(data,"workclass"))
+#wywołanie funkcji mapującej, ktora zmienia wartosci typu Object na wartosci liczbowe.
+#y<=50k to będzie 0, a powyżej 50k to będzie 1
+print(DatasetPreprocessing(data,["workclass","marital-status","occupation","race","sex","y"]))
+
+
 #utworzenie tabeli bazy danych
 
 
