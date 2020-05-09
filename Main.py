@@ -19,11 +19,10 @@ data = pd.read_csv("Adult_train.tab", sep='\t')
 #print(data.dtypes)
 
 data = data.replace('?',np.nan)
-#print(data.isnull().sum())
-#print(data.shape)
-#print(data.head())
+print(data.isnull().sum())
 print(data.corr())
-
+data = data.dropna(how='any')
+print(data.isnull().sum())
 #oczyszczanie danych
 
 # do wywalenia - education, native country, relationship
