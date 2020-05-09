@@ -46,6 +46,7 @@ def DatasetPreprocessing(data, columns_to_map):
 print(DatasetPreprocessing(data,["workclass","marital-status","occupation","race","sex","y"]))
 
 
+
 #utworzenie tabeli bazy danych
 
 
