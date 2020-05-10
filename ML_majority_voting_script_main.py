@@ -51,20 +51,6 @@ def plotRestults():
     pyplot.ylabel("education")
     pyplot.scatter(X_train["age"], X_train["education-num"], c=y_pred_ensable_train)
 
-    # for cls_name in cls_list.keys():
-    #     y_pred = cls_list[cls_name].fit_predict(self.iris['data'])
-    #     pyplot.subplot(subplot_number)
-    #     pyplot.scatter(self.iris['data'][:, column1], self.iris['data'][:, column2], c=y_pred)
-    #     pyplot.title("Clustering: " + cls_name)
-    #     pyplot.xlabel("x1")
-    #     pyplot.ylabel("x2")
-    #     subplot_number += 1
-    #     pyplot.subplot(subplot_number)
-    #     pyplot.scatter(self.iris['data'][:, column3], self.iris['data'][:, column4], c=y_pred)
-    #     pyplot.title("Clustering: " + cls_name)
-    #     pyplot.xlabel("x3")
-    #     pyplot.ylabel("x4")
-    #     subplot_number += 1
     pyplot.show()
 
 plotRestults()
