@@ -39,6 +39,8 @@ y_pred_ensable_test = ensableClassifier(
 
 # ML_algo_testing_main.getClassificationScore("Ensemble",y_test,y_pred_ensable_test)
 
+#male_fnlwgt = X_train['education-num'].value_counts()
+#print(male_fnlwgt)
 
 
 def plotRestults():
