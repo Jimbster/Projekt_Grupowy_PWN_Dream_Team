@@ -1,5 +1,10 @@
 import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
+
 import Main
+import ML_majority_voting_script_main
 
 
 
@@ -24,3 +29,11 @@ def DatasetPreprocessing2(data, columns_to_map):
 data_clean_to_predict = DatasetPreprocessing2(data_to_predict,["workclass","marital-status","occupation","race","sex"])
 
 print(data_clean_to_predict)
+
+y_pred_ensable_test = ML_majority_voting_script_main.ensableClassifier(
+    [RandomForestClassifier(),KNeighborsClassifier(n_neighbors=5), DecisionTreeClassifier()], Main.dataset_X, data_clean_to_predict, Main.y)
+
+print(y_pred_ensable_test)
+with open("wynik.txt","w") as a:
+    a.write(str(y_pred_ensable_test))
+
