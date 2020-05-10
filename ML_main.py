@@ -38,9 +38,10 @@ print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 y_pred_forrest = trainAndTestClassifier(RandomForestClassifier(), X_train,X_test,y_train)
 getClassificationScore("Random Forrest", y_test, y_pred_forrest)
 
-
-
-
+print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+#do tego ewentualnie wrócić w przyszłości! Brak stabilnych wyników dla kążdego przebiegu!
+y_pred_svm_rbf_train = trainAndTestClassifier(SVC(kernel='linear', gamma='auto', max_iter=500), X_train,X_test,y_train)
+getClassificationScore("SVC", y_test, y_pred_svm_rbf_train)
 
 
 
