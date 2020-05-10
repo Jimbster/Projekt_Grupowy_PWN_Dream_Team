@@ -26,15 +26,18 @@ data = data.drop(labels=["education","native-country","relationship"],axis=1)
 # print(data.describe(include=[np.object]))
 
 #mapowanie danych obiektowych na liczbowe
+
+mapper = {}
 def DatasetPreprocessing(data, columns_to_map):
     # mapowanie
     data_clean = data
     for column_name in columns_to_map:
-        mapper = {}
+        global mapper
         for index, category in enumerate(data[column_name].unique()):
             mapper[category] = index
 
         data_clean[column_name] = data[column_name].map(mapper)
+    # print(mapper)
     return data_clean
 
 #wywołanie funkcji mapującej, ktora zmienia wartosci typu Object na wartosci liczbowe.
