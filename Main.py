@@ -55,7 +55,7 @@ print(data_clean)
 
 #podzial zbbioru na czesc treningowa i testowa
 
-def splitDatasetIntoTrainAndTest(self, X, y, train_split_percent=0.6):
+def splitDatasetIntoTrainAndTest(X, y, train_split_percent=0.6):
 
     print(X.info())
     X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=train_split_percent)
@@ -65,7 +65,7 @@ dataset_X = data_clean.filter(["age","workclass","fnlwgt","education-num","marit
                            "race","sex","capital-gain","capital-loss","hours-per-week"])
 y=data_clean["y"]
 
-
-
-
 # splitDatasetIntoTrainAndTest(X=,y=)
+
+X_train, X_test, y_train, y_test = splitDatasetIntoTrainAndTest(X=dataset_X,y=y)
+
