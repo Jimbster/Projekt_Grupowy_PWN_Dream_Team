@@ -37,23 +37,23 @@ def getClassificationScore(clf_name ,y_test, y_pred):
     print("Specyficzność: "+str(recall_score(y_test, y_pred)))
 
 
-y_pred_Knn = trainAndTestClassifier(KNeighborsClassifier(n_neighbors=5),X_train,X_test, y_train)
-getClassificationScore("Knn", y_test, y_pred_Knn)
-print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
-
-y_pred_tree = trainAndTestClassifier(DecisionTreeClassifier(), X_train,X_test,y_train)
-getClassificationScore("Decision Tree", y_test, y_pred_tree)
-print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
-
-y_pred_forrest = trainAndTestClassifier(RandomForestClassifier(), X_train,X_test,y_train)
-getClassificationScore("Random Forrest", y_test, y_pred_forrest)
-
-print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
-#do tego ewentualnie wrócić w przyszłości! Brak stabilnych wyników dla kążdego przebiegu!
-y_pred_svm_rbf_train = trainAndTestClassifier(SVC(kernel='linear', gamma='auto', max_iter=500), X_train,X_test,y_train)
-getClassificationScore("SVC", y_test, y_pred_svm_rbf_train)
-
-print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+# y_pred_Knn = trainAndTestClassifier(KNeighborsClassifier(n_neighbors=5),X_train,X_test, y_train)
+# getClassificationScore("Knn", y_test, y_pred_Knn)
+# print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+#
+# y_pred_tree = trainAndTestClassifier(DecisionTreeClassifier(), X_train,X_test,y_train)
+# getClassificationScore("Decision Tree", y_test, y_pred_tree)
+# print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+#
+# y_pred_forrest = trainAndTestClassifier(RandomForestClassifier(), X_train,X_test,y_train)
+# getClassificationScore("Random Forrest", y_test, y_pred_forrest)
+#
+# print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+# #do tego ewentualnie wrócić w przyszłości! Brak stabilnych wyników dla kążdego przebiegu!
+# y_pred_svm_rbf_train = trainAndTestClassifier(SVC(kernel='linear', gamma='auto', max_iter=500), X_train,X_test,y_train)
+# getClassificationScore("SVC", y_test, y_pred_svm_rbf_train)
+#
+# print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 
 def crossValidation(clf, clf_name, X, y, folds=5):
     print("cross-validation: " + clf_name)

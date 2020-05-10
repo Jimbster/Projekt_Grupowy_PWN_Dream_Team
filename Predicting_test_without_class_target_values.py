@@ -14,8 +14,6 @@ y_train= Main.y_train
 y_test= Main.y_test
 
 
-# y_prediction = ensableClassifier([RandomForestClassifier(),KNeighborsClassifier(n_neighbors=5),
-#                    DecisionTreeClassifier()], X_train, X_test, y_train)
-
-data_to_predict = pd.read_csv("Adults_test_without_class.tab")
+data_to_predict = pd.read_csv("Adults_test_without_class.tab", sep='\t')
+data_to_predict = data_to_predict.drop(labels=["education","native-country","relationship"],axis=1)
 print(data_to_predict)

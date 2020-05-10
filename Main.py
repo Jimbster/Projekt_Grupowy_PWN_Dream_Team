@@ -35,12 +35,6 @@ def DatasetPreprocessing(data, columns_to_map):
             mapper[category] = index
 
         data_clean[column_name] = data[column_name].map(mapper)
-
-    #DO ROZWIAZANIA POZNIEJ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    # std=StandardScaler()
-    # data_clean=std.fit_transform(data_clean)
-    # data_clean=DataFrame(data_clean, columns=list(data_clean.columns))
-    #
     return data_clean
 
 #wywołanie funkcji mapującej, ktora zmienia wartosci typu Object na wartosci liczbowe.
