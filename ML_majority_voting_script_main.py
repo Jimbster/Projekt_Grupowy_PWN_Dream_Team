@@ -36,7 +36,4 @@ y_pred_ensable_train = ensableClassifier(
 y_pred_ensable_test = ensableClassifier(
     [RandomForestClassifier(),KNeighborsClassifier(n_neighbors=5), DecisionTreeClassifier()], X_train, X_test, y_train)
 
-print(y_pred_ensable_train)
-print(y_pred_ensable_test)
-
 ML_algo_testing_main.getClassificationScore("Ensemble",y_test,y_pred_ensable_test)
