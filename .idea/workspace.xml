@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a2c06b16-bf2d-4f7f-b7ae-4a325217e8f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/ML_majority_voting_script_main.py" afterPath="$PROJECT_DIR$/ML_majority_voting_script_main.py" />
       <change beforePath="$PROJECT_DIR$/Predicting_test_without_class_target_values.py" afterPath="$PROJECT_DIR$/Predicting_test_without_class_target_values.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="ML_algo_testing_main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ML_algo_testing_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-28">
-              <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            <state relative-caret-position="-11">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -26,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ML_majority_voting_script_main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ML_majority_voting_script_main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ML_majority_voting_script_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="119" />
+            <state relative-caret-position="125">
+              <caret line="49" column="83" lean-forward="false" selection-start-line="49" selection-start-column="83" selection-end-line="49" selection-end-column="83" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -38,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Predicting_test_without_class_target_values.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Predicting_test_without_class_target_values.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Predicting_test_without_class_target_values.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="325">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -86,11 +87,11 @@
         <option value="$PROJECT_DIR$/Adult_train.tab" />
         <option value="$PROJECT_DIR$/Machine_Learning.py" />
         <option value="$PROJECT_DIR$/ML_main.py" />
-        <option value="$PROJECT_DIR$/ML_majority_voting_script_main.py" />
         <option value="$PROJECT_DIR$/ML_algo_testing_main.py" />
         <option value="$PROJECT_DIR$/Adults_test_without_class.tab" />
         <option value="$PROJECT_DIR$/Main.py" />
         <option value="$PROJECT_DIR$/Predicting_test_without_class_target_values.py" />
+        <option value="$PROJECT_DIR$/ML_majority_voting_script_main.py" />
       </list>
     </option>
   </component>
@@ -469,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589111762619</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Results">
+      <created>1589112511192</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1589112511192</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView">
@@ -491,7 +499,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37993422" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21217105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -532,7 +540,8 @@
     <MESSAGE value="Commit taktyczny" />
     <MESSAGE value="Mapowanie wg pierwotnych wartości&#10;dodanie mappera jako zmienną globalną" />
     <MESSAGE value="Mapowanie wg pierwotnych wartości&#10;dodanie mappera jako zmienną globalną 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mapowanie wg pierwotnych wartości&#10;dodanie mappera jako zmienną globalną 2" />
+    <MESSAGE value="Results" />
+    <option name="LAST_COMMIT_MESSAGE" value="Results" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -585,39 +594,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Adult_train.tab">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="81" lean-forward="true" selection-start-line="2" selection-start-column="81" selection-end-line="2" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Adults_test_without_class.tab">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="75" lean-forward="false" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="75" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ML_algo_testing_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ML_majority_voting_script_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="119" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -641,10 +622,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Predicting_test_without_class_target_values.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="325">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Adult_train.tab">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="81" lean-forward="false" selection-start-line="2" selection-start-column="81" selection-end-line="2" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML_algo_testing_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML_majority_voting_script_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="49" column="83" lean-forward="false" selection-start-line="49" selection-start-column="83" selection-end-line="49" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>

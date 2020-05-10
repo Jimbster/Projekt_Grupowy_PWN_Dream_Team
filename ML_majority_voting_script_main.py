@@ -1,6 +1,7 @@
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
+from matplotlib import pyplot
 
 import Main
 import ML_algo_testing_main
@@ -36,4 +37,32 @@ y_pred_ensable_train = ensableClassifier(
 y_pred_ensable_test = ensableClassifier(
     [RandomForestClassifier(),KNeighborsClassifier(n_neighbors=5), DecisionTreeClassifier()], X_train, X_test, y_train)
 
-ML_algo_testing_main.getClassificationScore("Ensemble",y_test,y_pred_ensable_test)
+# ML_algo_testing_main.getClassificationScore("Ensemble",y_test,y_pred_ensable_test)
+
+
+
+def plotRestults():
+
+
+    pyplot.title("age and education")
+    pyplot.xlabel("age")
+    pyplot.ylabel("education")
+    pyplot.scatter(X_train["age"], X_train["education-num"], c=y_pred_ensable_train)
+
+    # for cls_name in cls_list.keys():
+    #     y_pred = cls_list[cls_name].fit_predict(self.iris['data'])
+    #     pyplot.subplot(subplot_number)
+    #     pyplot.scatter(self.iris['data'][:, column1], self.iris['data'][:, column2], c=y_pred)
+    #     pyplot.title("Clustering: " + cls_name)
+    #     pyplot.xlabel("x1")
+    #     pyplot.ylabel("x2")
+    #     subplot_number += 1
+    #     pyplot.subplot(subplot_number)
+    #     pyplot.scatter(self.iris['data'][:, column3], self.iris['data'][:, column4], c=y_pred)
+    #     pyplot.title("Clustering: " + cls_name)
+    #     pyplot.xlabel("x3")
+    #     pyplot.ylabel("x4")
+    #     subplot_number += 1
+    pyplot.show()
+
+plotRestults()
