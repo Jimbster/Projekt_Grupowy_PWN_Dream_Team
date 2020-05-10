@@ -1,4 +1,5 @@
 from sklearn.metrics import accuracy_score, confusion_matrix
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 
 import Main
@@ -24,12 +25,9 @@ def getClassificationScore(clf_name ,y_test, y_pred):
     print(accuracy_score(y_test, y_pred))
     print(confusion_matrix(y_test, y_pred))
 
-y_pred_SVM = trainAndTestClassifier(SVC(kernel="linear"),X_train,X_test, y_train)
-
-# print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
-# getClassificationScore("SVC", y_test, y_pred_SVM)
-
-
+y_pred_Knn = trainAndTestClassifier(KNeighborsClassifier(n_neighbors=5),X_train,X_test, y_train)
+getClassificationScore("Knn", y_test, y_pred_Knn)
+print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 
 
 
