@@ -1,5 +1,6 @@
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, f1_score, precision_score
+from sklearn.model_selection import cross_val_score
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
@@ -48,5 +49,27 @@ print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 y_pred_svm_rbf_train = trainAndTestClassifier(SVC(kernel='linear', gamma='auto', max_iter=500), X_train,X_test,y_train)
 getClassificationScore("SVC", y_test, y_pred_svm_rbf_train)
 
+print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+
+def crossValidation(clf, clf_name, X, y, folds=5):
+    print("cross-validation: " + clf_name)
+    scores = cross_val_score(clf, X, y, cv=folds)
+    print(scores)
+    # wynik mean i stddev testów kroswalidacji
+    print("mean: " + str(scores.mean()))
+    print("stddev: " + str(scores.std()))
 
 
+print("\n\n\n@"*10+" CROSS WALIDACJA "+"@"*10)
+
+clf = RandomForestClassifier()
+crossValidation(clf, 'Random Forrest', Main.dataset_X, Main.y, folds=5)
+print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+clf = KNeighborsClassifier(n_neighbors=5)
+crossValidation(clf, 'Knn-5', Main.dataset_X, Main.y, folds=5)
+print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+clf = DecisionTreeClassifier()
+crossValidation(clf, 'Decision Tree', Main.dataset_X, Main.y, folds=5)
+print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+clf = SVC(kernel='linear', gamma='auto', max_iter=500)
+crossValidation(clf, 'SVC', Main.dataset_X, Main.y, folds=5)

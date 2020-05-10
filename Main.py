@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
+from pandas import DataFrame
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
 
 pd.set_option('display.max_columns', 20)
 
@@ -34,6 +36,11 @@ def DatasetPreprocessing(data, columns_to_map):
 
         data_clean[column_name] = data[column_name].map(mapper)
 
+    #DO ROZWIAZANIA POZNIEJ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    # std=StandardScaler()
+    # data_clean=std.fit_transform(data_clean)
+    # data_clean=DataFrame(data_clean, columns=list(data_clean.columns))
+    #
     return data_clean
 
 #wywołanie funkcji mapującej, ktora zmienia wartosci typu Object na wartosci liczbowe.
@@ -50,6 +57,7 @@ def splitDatasetIntoTrainAndTest(X, y, train_split_percent=0.6):
     # print(X.info())
     X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=train_split_percent)
     return X_train, X_test, y_train, y_test
+
 
 dataset_X = data_clean.filter(["age","workclass","fnlwgt","education-num","marital-status","occupation",
                            "race","sex","capital-gain","capital-loss","hours-per-week"])
