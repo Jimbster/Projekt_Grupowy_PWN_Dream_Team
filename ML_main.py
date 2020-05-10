@@ -1,6 +1,7 @@
 from sklearn.metrics import accuracy_score, confusion_matrix
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
+from sklearn.tree import DecisionTreeClassifier
 
 import Main
 
@@ -28,8 +29,8 @@ def getClassificationScore(clf_name ,y_test, y_pred):
 y_pred_Knn = trainAndTestClassifier(KNeighborsClassifier(n_neighbors=5),X_train,X_test, y_train)
 getClassificationScore("Knn", y_test, y_pred_Knn)
 print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
-
-
+y_pred_tree = trainAndTestClassifier(DecisionTreeClassifier(), X_train,X_train,y_train)
+getClassificationScore("Decision Tree", y_test, y_pred_tree)
 
 
 
