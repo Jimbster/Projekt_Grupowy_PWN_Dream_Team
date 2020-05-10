@@ -3,6 +3,7 @@
 import pandas as pd
 import sklearn as sklearn
 import numpy as np
+from sklearn.model_selection import train_test_split
 
 pd.set_option('display.max_columns', 20)
 
@@ -43,11 +44,28 @@ def DatasetPreprocessing(data, columns_to_map):
 
 #wywołanie funkcji mapującej, ktora zmienia wartosci typu Object na wartosci liczbowe.
 #y<=50k to będzie 0, a powyżej 50k to będzie 1
-print(DatasetPreprocessing(data,["workclass","marital-status","occupation","race","sex","y"]))
+data_clean = (DatasetPreprocessing(data,["workclass","marital-status","occupation","race","sex","y"]))
+print(data_clean)
 
 
 
 #utworzenie tabeli bazy danych
+#później
 
 
 #podzial zbbioru na czesc treningowa i testowa
+
+def splitDatasetIntoTrainAndTest(self, X, y, train_split_percent=0.6):
+
+    print(X.info())
+    X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=train_split_percent)
+    return X_train, X_test, y_train, y_test
+
+dataset_X = data_clean.filter(["age","workclass","fnlwgt","education-num","marital-status","occupation",
+                           "race","sex","capital-gain","capital-loss","hours-per-week"])
+y=data_clean["y"]
+
+
+
+
+# splitDatasetIntoTrainAndTest(X=,y=)
